@@ -10,7 +10,8 @@ let pricingDetails = [
         period: "/month",
         user: {
             text: "Single User",
-            available: 1
+            available: 1,
+            important: 0
         },
         space: {
             text: "5GB Storage",
@@ -50,7 +51,8 @@ let pricingDetails = [
         period: "/month",
         user: {
             text: "5 Users",
-            available: 1
+            available: 1,
+            important: 1
         },
         space: {
             text: "50GB Storage",
@@ -90,7 +92,8 @@ let pricingDetails = [
         period: "/month",
         user: {
             text: "Unlimited Users",
-            available: 1
+            available: 1,
+            important: 1
         },
         space: {
             text: "150GB Storage",

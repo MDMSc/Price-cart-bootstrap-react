@@ -9,7 +9,7 @@ export default function Card(props) {
                 <h6 className="card-price text-center">{props.price}<span className="period">{props.period}</span></h6>
                 <hr />
                 <ul className="fa-ul">
-                    <li className={props.user.available ? "" : "text-muted"}><span className="fa-li"><i className={props.user.available ? "fas fa-check" : "fas fa-times"}></i></span>{props.user.text}</li>
+                    <li className={props.user.available ? "" : "text-muted"}><span className="fa-li"><i className={props.user.available ? "fas fa-check" : "fas fa-times"}></i></span>{props.user.important ? <strong>{props.user.text}</strong> : props.user.text}</li>
                     <li className={props.space.available ? "" : "text-muted"}><span className="fa-li"><i className={props.space.available ? "fas fa-check" : "fas fa-times"}></i></span>{props.space.text}</li>
                     <li className={props.public_project.available ? "" : "text-muted"}><span className="fa-li"><i className={props.public_project.available ? "fas fa-check" : "fas fa-times"}></i></span>{props.public_project.text}</li>
                     <li className={props.access.available ? "" : "text-muted"}><span className="fa-li"><i className={props.access.available ? "fas fa-check" : "fas fa-times"}></i></span>{props.access.text}</li>
